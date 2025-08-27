@@ -16,5 +16,3 @@ export type PaginatedResponse<T> = {
     totalPages: number;
   };
 };
-
-
