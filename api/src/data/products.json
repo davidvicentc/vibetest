@@ -1,11 +1,19 @@
 [
   {
+    "id": "p1756301657637",
+    "name": "perfume mil",
+    "price": 10,
+    "isAvailable": true,
+    "category": "perro",
+    "image": ""
+  },
+  {
     "id": "p1756301110986",
     "name": "Perfume Test",
     "price": 77.7,
     "isAvailable": true,
     "category": "eau de parfum",
-    "image": "/img/perfume1.svg"
+    "image": ""
   },
   {
     "id": "p1",
@@ -13,7 +21,7 @@
     "price": 89.9,
     "isAvailable": true,
     "category": "eau de parfum",
-    "image": "/img/perfume1.svg"
+    "image": ""
   },
   {
     "id": "p2",
@@ -21,7 +29,7 @@
     "price": 69,
     "isAvailable": false,
     "category": "eau de toilette",
-    "image": "/img/perfume2.svg"
+    "image": ""
   },
   {
     "id": "p3",
@@ -29,7 +37,7 @@
     "price": 49.5,
     "isAvailable": true,
     "category": "colonia",
-    "image": "/img/perfume3.svg"
+    "image": ""
   },
   {
     "id": "p4",
@@ -37,7 +45,7 @@
     "price": 99,
     "isAvailable": true,
     "category": "parfum",
-    "image": "/img/perfume4.svg"
+    "image": ""
   },
   {
     "id": "p5",
@@ -45,7 +53,7 @@
     "price": 59.9,
     "isAvailable": true,
     "category": "eau de parfum",
-    "image": "/img/perfume5.svg"
+    "image": ""
   },
   {
     "id": "p6",
@@ -53,7 +61,7 @@
     "price": 129,
     "isAvailable": true,
     "category": "parfum",
-    "image": "/img/perfume6.svg"
+    "image": ""
   },
   {
     "id": "p7",
@@ -61,6 +69,6 @@
     "price": 39.9,
     "isAvailable": false,
     "category": "colonia",
-    "image": "/img/perfume7.svg"
+    "image": ""
   }
 ]

@@ -78,10 +78,7 @@ export default async function ProductsPage({
             <option value="true">En stock</option>
             <option value="false">Sin stock</option>
           </select>
-          <button
-            type="submit"
-            className="btn-contained"
-          >
+          <button type="submit" className="btn-contained">
             Filtrar
           </button>
         </div>

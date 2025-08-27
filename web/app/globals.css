@@ -44,11 +44,7 @@ body {
       rgba(0, 0, 0, 0.04),
       transparent
     ),
-    radial-gradient(
-      900px 500px at 110% 0%,
-      rgba(0, 0, 0, 0.035),
-      transparent
-    ),
+    radial-gradient(900px 500px at 110% 0%, rgba(0, 0, 0, 0.035), transparent),
     linear-gradient(180deg, #ffffff 0%, #f5f9ff 100%);
 }
 .bg-blob-1,
@@ -94,6 +90,12 @@ body {
   }
 }
 
+@keyframes pulse-slow {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: .95; transform: scale(1.01); }
+}
+.animate-pulse-slow { animation: pulse-slow 3s ease-in-out infinite; }
+
 /* Navegación */
 .nav-link {
   color: var(--accent);
@@ -118,33 +120,45 @@ body {
 .btn {
   color: var(--accent);
   padding: 8px 12px;
-  border: 1px solid rgba(0,0,0,0.12);
+  border: 1px solid rgba(0, 0, 0, 0.12);
   border-radius: 8px;
   background: #fff;
-  transition: box-shadow .2s ease, transform .2s ease, background .2s ease;
+  transition: box-shadow 0.2s ease, transform 0.2s ease, background 0.2s ease;
 }
-.btn:hover { box-shadow: 0 4px 14px rgba(0,0,0,0.08); background: #fafafa; }
+.btn:hover {
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  background: #fafafa;
+}
 .btn-contained {
   background: var(--accent);
   color: #fff;
   padding: 9px 14px;
   border-radius: 8px;
-  box-shadow: 0 8px 24px rgba(124,77,255,0.35);
+  box-shadow: 0 8px 24px rgba(124, 77, 255, 0.35);
 }
-.btn-contained:hover { filter: brightness(1.05); }
+.btn-contained:hover {
+  filter: brightness(1.05);
+}
 .input-outlined {
-  border: 1px solid rgba(0,0,0,0.18);
+  border: 1px solid rgba(0, 0, 0, 0.18);
   border-radius: 8px;
   background: #fff;
   padding: 10px 12px;
   outline: none;
 }
-.input-outlined:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(124,77,255,0.15); }
+.input-outlined:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(124, 77, 255, 0.15);
+}
 .card {
-  border: 1px solid rgba(0,0,0,0.08);
+  border: 1px solid rgba(0, 0, 0, 0.08);
   background: #fff;
   border-radius: 8px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
-  transition: box-shadow .2s ease, transform .2s ease, border-color .2s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
 }
-.card:hover { box-shadow: 0 10px 24px rgba(0,0,0,0.10); transform: translateY(-2px); border-color: rgba(124,77,255,0.4); }
+.card:hover {
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+  border-color: rgba(124, 77, 255, 0.4);
+}

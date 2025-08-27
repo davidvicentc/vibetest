@@ -28,7 +28,7 @@ export default function ProductCard({ product }: Props) {
           }}
         />
         <Image
-          src={product.image || "/img/perfume-placeholder.svg"}
+          src={"/img/perfume-placeholder.svg"}
           alt={product.name}
           width={200}
           height={200}
