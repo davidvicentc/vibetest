@@ -31,7 +31,9 @@ export async function fetchProduct(id: string): Promise<Product> {
   return res.json();
 }
 
-export async function createProduct(body: Omit<Product, "id">): Promise<Product> {
+export async function createProduct(
+  body: Omit<Product, "id">
+): Promise<Product> {
   const res = await fetch(`${API_BASE}/api/products`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
@@ -41,7 +43,10 @@ export async function createProduct(body: Omit<Product, "id">): Promise<Product>
   return res.json();
 }
 
-export async function updateProduct(id: string, body: Omit<Product, "id">): Promise<Product> {
+export async function updateProduct(
+  id: string,
+  body: Omit<Product, "id">
+): Promise<Product> {
   const res = await fetch(`${API_BASE}/api/products/${id}`, {
     method: "PUT",
     headers: { "Content-Type": "application/json" },
@@ -52,6 +57,8 @@ export async function updateProduct(id: string, body: Omit<Product, "id">): Prom
 }
 
 export async function deleteProduct(id: string): Promise<void> {
-  const res = await fetch(`${API_BASE}/api/products/${id}`, { method: "DELETE" });
+  const res = await fetch(`${API_BASE}/api/products/${id}`, {
+    method: "DELETE",
+  });
   if (!res.ok) throw new Error("Failed to delete product");
 }

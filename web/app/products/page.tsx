@@ -36,7 +36,10 @@ export default async function ProductsPage({
 
   return (
     <main className="mx-auto max-w-7xl px-4 py-8">
-      <h1 className="text-2xl font-bold tracking-tight">Productos</h1>
+      <div className="flex items-center justify-between">
+        <h1 className="text-2xl font-bold tracking-tight text-brand">Perfumes</h1>
+        <span className="text-sm text-neutral-500">Explora fragancias exclusivas</span>
+      </div>
 
       <form className="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-3">
         <input

@@ -25,7 +25,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen bg-brand-layer relative`}
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen bg-brand-layer relative`}
       >
         <div className="bg-blob-1" aria-hidden />
         <div className="bg-blob-2" aria-hidden />
@@ -33,17 +34,21 @@ export default function RootLayout({
           <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3">
             <Link href="/" className="flex items-center gap-2">
               <span className="inline-block h-3 w-3 rounded-full bg-brand ring-4 ring-brand/20" />
-              <span className="text-sm font-semibold tracking-wide text-brand">VIBES Perfumes</span>
+              <span className="text-sm font-semibold tracking-wide text-brand">
+                VIBES Perfumes
+              </span>
             </Link>
             <div className="flex items-center gap-4 text-sm">
-              <Link className="nav-link" href="/products">Productos</Link>
-              <Link className="nav-cta" href="/admin/products">Admin</Link>
+              <Link className="nav-link" href="/products">
+                Productos
+              </Link>
+              <Link className="nav-cta" href="/admin/products">
+                Admin
+              </Link>
             </div>
           </nav>
         </header>
-        <main className="relative z-10">
-          {children}
-        </main>
+        <main className="relative z-10">{children}</main>
       </body>
     </html>
   );

@@ -28,7 +28,7 @@ export default function ProductCard({ product }: Props) {
           }}
         />
         <Image
-          src={product.image || "/next.svg"}
+          src={product.image || "/img/perfume-placeholder.svg"}
           alt={product.name}
           width={200}
           height={200}
@@ -43,8 +43,12 @@ export default function ProductCard({ product }: Props) {
       </div>
 
       <div className="mt-2 flex items-center justify-between">
-        <p className="text-[14px] text-neutral-800">${product.price.toFixed(2)}</p>
-        <span className={`inline-flex items-center rounded-md px-2 py-1 text-xs ${badgeColor}`}>
+        <p className="text-[14px] text-neutral-800">
+          ${product.price.toFixed(2)}
+        </p>
+        <span
+          className={`inline-flex items-center rounded-md px-2 py-1 text-xs ${badgeColor}`}
+        >
           {badgeText}
         </span>
       </div>
