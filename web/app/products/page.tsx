@@ -107,9 +107,9 @@ export default async function ProductsPage({
             className="rounded-md border px-3 py-2 text-sm"
             href={`?${new URLSearchParams({
               ...Object.fromEntries(
-                Object.entries(
-                  sp as Record<string, string | undefined>
-                ).filter(([, v]) => v !== undefined)
+                Object.entries(sp as Record<string, string | undefined>).filter(
+                  ([, v]) => v !== undefined
+                )
               ),
               page: String(Math.max(1, meta.page - 1)),
             })}`}
@@ -120,9 +120,9 @@ export default async function ProductsPage({
             className="rounded-md border px-3 py-2 text-sm"
             href={`?${new URLSearchParams({
               ...Object.fromEntries(
-                Object.entries(
-                  sp as Record<string, string | undefined>
-                ).filter(([, v]) => v !== undefined)
+                Object.entries(sp as Record<string, string | undefined>).filter(
+                  ([, v]) => v !== undefined
+                )
               ),
               page: String(Math.min(meta.totalPages, meta.page + 1)),
             })}`}

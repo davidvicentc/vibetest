@@ -1,58 +1,66 @@
 [
   {
-    "id": "p1",
-    "name": "Guantes GN102",
-    "price": 59.9,
+    "id": "p1756301110986",
+    "name": "Perfume Test",
+    "price": 77.7,
     "isAvailable": true,
-    "category": "gloves",
-    "image": "/img/gn102.svg"
+    "category": "eau de parfum",
+    "image": "/img/perfume1.svg"
+  },
+  {
+    "id": "p1",
+    "name": "Perfume Azure Breeze",
+    "price": 89.9,
+    "isAvailable": true,
+    "category": "eau de parfum",
+    "image": "/img/perfume1.svg"
   },
   {
     "id": "p2",
-    "name": "Casco CS433",
-    "price": 79.9,
+    "name": "Perfume Ocean Mist",
+    "price": 69,
     "isAvailable": false,
-    "category": "headgear",
-    "image": "/img/cs433.svg"
+    "category": "eau de toilette",
+    "image": "/img/perfume2.svg"
   },
   {
     "id": "p3",
-    "name": "Bolsa AC990",
-    "price": 24.5,
+    "name": "Perfume Citrus Glow",
+    "price": 49.5,
     "isAvailable": true,
-    "category": "bag",
-    "image": "/img/ac990.svg"
+    "category": "colonia",
+    "image": "/img/perfume3.svg"
   },
   {
     "id": "p4",
-    "name": "Lentes LT210",
-    "price": 39.0,
+    "name": "Perfume Midnight Velvet",
+    "price": 99,
     "isAvailable": true,
-    "category": "glasses",
-    "image": "/img/lt210.svg"
+    "category": "parfum",
+    "image": "/img/perfume4.svg"
   },
   {
     "id": "p5",
-    "name": "Guantes GN220",
-    "price": 29.9,
+    "name": "Perfume White Bloom",
+    "price": 59.9,
     "isAvailable": true,
-    "category": "gloves",
-    "image": "/img/gn220.svg"
+    "category": "eau de parfum",
+    "image": "/img/perfume5.svg"
   },
   {
     "id": "p6",
-    "name": "Casco CS500",
-    "price": 129.0,
+    "name": "Perfume Deep Indigo",
+    "price": 129,
     "isAvailable": true,
-    "category": "headgear",
-    "image": "/img/cs500.svg"
+    "category": "parfum",
+    "image": "/img/perfume6.svg"
   },
   {
     "id": "p7",
-    "name": "Bolso BG100",
-    "price": 19.9,
+    "name": "Perfume Sky Whisper",
+    "price": 39.9,
     "isAvailable": false,
-    "category": "bag",
-    "image": "/img/bg100.svg"
+    "category": "colonia",
+    "image": "/img/perfume7.svg"
   }
 ]
