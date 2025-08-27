@@ -37,8 +37,12 @@ export default async function ProductsPage({
   return (
     <main className="mx-auto max-w-7xl px-4 py-8">
       <div className="flex items-center justify-between">
-        <h1 className="text-2xl font-bold tracking-tight text-brand">Perfumes</h1>
-        <span className="text-sm text-neutral-500">Explora fragancias exclusivas</span>
+        <h1 className="text-2xl font-bold tracking-tight text-brand">
+          Perfumes
+        </h1>
+        <span className="text-sm text-neutral-500">
+          Explora fragancias exclusivas
+        </span>
       </div>
 
       <form className="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-3">
@@ -46,12 +50,12 @@ export default async function ProductsPage({
           name="search"
           defaultValue={sp.search}
           placeholder="Buscar..."
-          className="rounded-md border border-neutral-300 bg-white px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-neutral-800 dark:bg-neutral-900 dark:border-neutral-700"
+          className="input-outlined"
         />
         <select
           name="sort"
           defaultValue={sp.sort ?? "price"}
-          className="rounded-md border px-3 py-2 text-sm"
+          className="input-outlined"
         >
           <option value="price">Precio</option>
           <option value="name">Nombre</option>
@@ -60,7 +64,7 @@ export default async function ProductsPage({
           <select
             name="order"
             defaultValue={sp.order ?? "asc"}
-            className="flex-1 rounded-md border px-3 py-2 text-sm"
+            className="input-outlined flex-1"
           >
             <option value="asc">Ascendente</option>
             <option value="desc">Descendente</option>
@@ -68,7 +72,7 @@ export default async function ProductsPage({
           <select
             name="available"
             defaultValue={sp.available ?? ""}
-            className="flex-1 rounded-md border px-3 py-2 text-sm"
+            className="input-outlined flex-1"
           >
             <option value="">Todos</option>
             <option value="true">En stock</option>
@@ -76,7 +80,7 @@ export default async function ProductsPage({
           </select>
           <button
             type="submit"
-            className="rounded-md bg-black px-4 py-2 text-white"
+            className="btn-contained"
           >
             Filtrar
           </button>
