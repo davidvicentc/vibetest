@@ -1,4 +1,4 @@
-import type { PaginatedResponse, Product } from "../../shared/types";
+import type { PaginatedResponse, Product } from "./types";
 
 const API_BASE = process.env.NEXT_PUBLIC_API_BASE ?? "http://localhost:3001";
 

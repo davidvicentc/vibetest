@@ -1,6 +1,6 @@
 import { fetchProducts } from "@/lib/api";
 import ProductCard from "@/components/ProductCard";
-import { getTopCheapestAvailable } from "../../../shared/types";
+import { getTopCheapestAvailable } from "@/lib/util";
 
 export const revalidate = 10;
 
@@ -13,15 +13,16 @@ type SearchParams = {
   available?: string;
 };
 
-export default async function ProductsPage({ searchParams }: { searchParams: SearchParams }) {
-  const page = Number(searchParams.page ?? 1);
-  const limit = Number(searchParams.limit ?? 12);
-  const available = searchParams.available ? searchParams.available === "true" : undefined;
+export default async function ProductsPage({ searchParams }: { searchParams: Promise<SearchParams> }) {
+  const sp = await searchParams;
+  const page = Number(sp.page ?? 1);
+  const limit = Number(sp.limit ?? 12);
+  const available = sp.available ? sp.available === "true" : undefined;
 
   const { data, meta } = await fetchProducts({
-    search: searchParams.search,
-    sort: searchParams.sort,
-    order: searchParams.order,
+    search: sp.search,
+    sort: sp.sort,
+    order: sp.order,
     page,
     limit,
     available,
@@ -45,11 +46,11 @@ export default async function ProductsPage({ searchParams }: { searchParams: Sea
           <option value="name">Nombre</option>
         </select>
         <div className="flex gap-2">
-          <select name="order" defaultValue={searchParams.order ?? "asc"} className="flex-1 rounded-md border px-3 py-2 text-sm">
+          <select name="order" defaultValue={sp.order ?? "asc"} className="flex-1 rounded-md border px-3 py-2 text-sm">
             <option value="asc">Ascendente</option>
             <option value="desc">Descendente</option>
           </select>
-          <select name="available" defaultValue={searchParams.available ?? ""} className="flex-1 rounded-md border px-3 py-2 text-sm">
+          <select name="available" defaultValue={sp.available ?? ""} className="flex-1 rounded-md border px-3 py-2 text-sm">
             <option value="">Todos</option>
             <option value="true">En stock</option>
             <option value="false">Sin stock</option>

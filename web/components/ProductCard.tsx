@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import type { Product } from "../../shared/types";
+import type { Product } from "@/lib/types";
 
 type Props = {
   product: Product;
